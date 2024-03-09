@@ -215,15 +215,13 @@ function sellTickets(queue) {
  *    console.log(r.height);      // => 20
  *    console.log(r.getArea());   // => 200
  */
-class Rectangle {
-  constructor(width, height) {
-    this.width = width;
-    this.height = height;
-  }
+function Rectangle(width, height) {
+  this.width = width;
+  this.height = height;
 
-  getArea() {
+  this.getArea = function calculateArea() {
     return this.width * this.height;
-  }
+  };
 }
 
 /**
